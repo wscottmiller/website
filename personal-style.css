@@ -1,0 +1,131 @@
+
+/* Custom CSS for Get your hands Dirty*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+body {
+	background: #EEEEEE;
+    background: url('images/ticks.png') top left repeat;
+	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14pt;
+}
+/*width of the container*/
+#container {
+	width: 900px;
+	margin: 10px auto;
+}
+#header{
+	background-image: url('images/Scott.jpg');
+	background-repeat: no-repeat;
+	display:block;
+	margin:10px;
+	text-indent: -9999px;
+	width: auto;
+	height:270px;
+}
+#footer, #menu {
+	background: #3F3F3F;
+	color: #3083AC;
+	padding: 30px;
+	margin: 10px;
+}
+#menu {
+
+	height: auto;
+	font-size: 16pt;
+	padding: 10px 5px 20px 10px;
+	
+	
+}
+#logo {
+	
+	display: inline;
+	position: relative;
+	right: -150px;
+	bottom: -6px;
+}	
+
+#footer {
+	
+	text-align: center;
+	font-size: 12px;
+}
+h1, h2, h3 {
+	color: #3083AC;
+
+}
+
+
+
+/*order matters*/
+a:link{
+	color: #3083AC;
+	text-decoration: none;
+}
+
+a:visited{
+	color:  #3083AC;
+
+}
+a:hover {
+	color: #ACCDDE;
+	text-decoration: underline;
+}
+ul li {
+	display: inline;
+	list-style-type:none;
+	color: #3083AC;
+	padding: 10px 5px 5px 10px;
+	
+}
+.lead {
+	font-size: 18px;
+}
+
+.blog-post {
+	background: #fff;
+	padding: 30px;
+	margin: 0px 10px 10px; 
+}
+
+.blog-post a:link{
+
+	color: #0099FF;
+}
+.blog-post a:visited {
+	color: #0099FF;
+	
+}
+.blog-post a:hover {
+
+	color: #3083AC;
+	text-decoration: underline; 
+}
+.blog-post ul li{
+	display: block;
+	list-style-type: none;
+}
+#pic {
+	
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.blog-post h2, .blog-post p {
+	margin-bottom: 10px;
+}
+
+.blog-post em {
+	color: #ccc;
+}
+
+

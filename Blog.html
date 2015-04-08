@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Scott Miller</title>
+	
+		<meta name="description" content="FreeNAS">
+		<meta name="keywords" content="Computer Science, UCSD, Scott Miller">
+		<meta name="author" content="Scott Miller">		
+
+		<link rel="stylesheet" href="personal-style.css">
+		
+		<link rel="stylesheet" href="normalize.css">
+
+	
+	</head>
+	<body>
+	
+		<div id="container">
+			
+				<a href="index.html" id="header">Scott Miller</a>
+			
+			
+			<div id="menu">
+				
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+
+						<li>
+							<a href="wsmiller_resume_final.pdf">Resume</a>
+						</li>
+						
+						<li>
+							<a href="comingsoon.html">Github</a>
+						</li>
+	
+						<li>
+							<a href="Blog.html">Blog</a>
+						</li>
+				
+						
+						
+						<li>
+							<a href="useful.html">Useful Links</a>
+						</li>
+						
+						
+						<div id="logo">
+						
+						<li>
+							
+							<a href="http://www.facebook.com/ScottMiller.Miller"><img src="images/FB29.png"></a>
+							
+						</li>
+						<li>
+							
+								<a href="https://www.youtube.com/user/wsmiller324/videos"><img src="images/youtube.png"></a>
+							
+						</li>
+				
+						
+						<li>
+							
+							<a href="http://www.linkedin.com/in/williamscottmiller/en"><img src="images/in29.png"></a>
+							
+						</li>
+
+						
+						</div>
+						
+					</ul>
+				
+			</div>
+			
+			
+			
+			<div class="blog-post">
+				<h2>Budget Home Server Build with FreeNAS</h2>
+				<p>
+				The Laundry room at my housing complex is a bit of a recycling area. 
+				A place for people to drop off their unwanted goods so that others can 
+				pick them over and give them a new home. Laundry day during the beginning 
+				of the new school year at UCSD was like Christmas morning! All kinds of 
+				great stuff! Everything from used furniture, rice cookers, textbooks to 
+				consumer electronics. This day I walked away with a totally salvageable 
+				coffee table for the living room, a broken laptop, and a Dell XPS 410 
+				with a 2.80 Ghz Pentium D processor, woohoo! The only caveat was that it 
+				was missing a hard drive and only had a paltry 1GB of memory. No wonder 
+				the person threw it out, this thing ran like garbage with 1GB of memory. 
+				</p>
+				<div id="pic">
+					
+						<img src="images/blog/Dell.jpg" id="pic" alt="Dell XPS 410">
+					
+					</div>
+				
+				<p>
+				I already have a computer that I do my day-to-day business with, a 2013 
+				Macbook air that I love and adore. So I couldn't decide whether I wanted 
+				to build a decent gaming rig or build a home server. It had been about a decade
+				since I last built a PC, so I had a little bit of research to do on the latest 
+				components, thankfully not that much has changed. After a little investigating, 
+				I found that to give this thing any kind of decent 
+				graphics performance it was still going to take several hundred dollars 
+				more than I wanted to spend. I realized that I had been in desperate need 
+				of a better backup solution than my current 1TB drive. I had been using it to do
+				 time machine backups for 2 computers and store pictures and 
+				movies. The six-year-old Seagate drive had done its fair share of work. 
+				I needed a better solution. 
+				</p>
+				
+				<p>
+				Introducing <a href="http://www.freenas.org">FreeNAS</a>, an open source storage platform based on the FreeBSD 
+				operating system that is optimized for file storage and sharing. After a 
+				lot of research I decided that this was the best option to fit my needs, 
+				and best of all it was <strong>FREE!</strong> I wanted a machine that would be able to 
+				perform wireless time machine backups for two Macbooks, and still be able 
+				to share any type of media files over multiple devices on my wifi network.
+				 The ability to perform wireless backups over the network was critical, 
+				 because I realized that I rarely performed backups otherwise (hooking up 
+				 that wire is just so much work). 
+				 I also didn't want to ever have to worry about losing important work on either 
+				 of our computers while my girlfriend and I attend our respective 
+				 Computer Science programs at UCI and UCSD. There are multiple standalone 
+				 drives on the market that can do this, but price and performance can be 
+				 an issue when wanting such a dynamic storage solution. Our Apple Airport 
+				 Extreme offers a USB port for similar storage capabilities, 
+				 but the latency and read and write speeds are dreadful, especially during prolonged 
+				 reading and writing. The Netgear router I had owned (which died after 1 year) 
+				 also suffered from the same issues, so I didn't want to go through 
+				 anymore let-downs. I needed something with a lot more power. 
+				
+				</p>
+				<a href="http://www.freenas.org">FreeNAS</a> offers two types of data volumes, ZFS and UFS. After a lot of 
+				reading on the topic, I decided that although ZFS has a lot more options 
+				and power, it really wasn't necessary for my situation, and also should 
+				be running on ECC-RAM.  The Dell XPS 410 motherboard doesn't support ECC, 
+				and although it would still run without ECC, I didn't want to risk any 
+				issues associated with not using it. So, UFS it is. 
+				
+				<p>
+				Off to the store! Equipment needed:
+				
+				</p>
+				
+				<ul>
+					<li>1 SATA cable $6</li>
+					
+					<li>2 1TB Western Digital Blue HD's $50 each</li>
+					
+					<li> 8GB thumb drive (to run the operating system) $12</li>
+					
+					<li>4 GB DDR2 Desktop Memory $30 (Craigslist)<li>
+					
+				
+				</ul>
+				
+				<div id="pic">
+					
+						<img src="images/blog/Blue.jpg" id="pic">
+					
+					</div>
+				<p>
+					<center>
+					I love craigslist.
+					</center>
+				</p>
+					
+				<div id="pic">
+					
+						<img src="images/blog/RAM.jpg" id="pic">
+					
+					</div>
+					
+				
+				
+				<p>
+				For a grand total of around $150.
+				
+				</p>
+				
+				<p>
+				The system was beginning to take shape, and I decided that since that 
+				Seagate Drive I had was still going strong that I would just continue 
+				to use it until it dies and just add additional drives as needed. The 
+				XPS 410 still has plenty of room for additional drives, I have no use
+				for either of the DVD drives, so they can be removed to make way for 
+				additional drives when the need arises. 
+				
+				<div id="pic">
+					
+						<img src="images/blog/seagate2.jpg" id="pic">
+					
+					</div>
+				
+				</p>
+				<h3>The Machine</h3>
+				
+				<ul>
+					<li>3 TB Disk Space (1TB for each Time Machine and 1 TB for 
+					movies and mutimedia)</li>
+					
+					<li>4GB Memory</li>
+					
+					<li>2.80 GHz Pentium D</li>
+				</ul>
+				
+				
+				
+				<p>
+				I had installed all of the components and booted up the machine, but to my
+				 surprise there was no sign of UFS anywhere. Unfortunately, according to 
+				 the website UFS was discontinued with the release of FreeNAS 9.3. So 
+				 after a little bit of digging I found and installed an older version 
+				 - 9.2.1.9 - and I was back in business.  You can find it 
+				 <a href=" http://download.freenas.org/9.2.1.9/RELEASE/x64/">here.</a>
+				
+				</p>
+				
+				<div id="pic">
+					
+						<img src="images/blog/system.jpg" id="pic">
+					
+					</div>
+				
+				<h3>Performance</h3>
+				
+				<p>
+				The machine was able to saturate most of what 5GHz band my router
+				 has to offer. Real world <a href="http://www.tekrevue.com/pure-speed-2013-802-11ac-airport-extreme-benchmarks/">tests</a>
+				 actually show that under the best circumstances my router 
+				 (the 5th Gen Apple Airport Extreme) will usually perform around 200Mbps 
+				 (bits, not bytes!). So, needless to say I was pleased with the results.
+				The CPU also performed quite well under wireless transfers, never measuring 
+				over 30% use under heavy load.
+				  
+				</p>
+				<div id="pic">
+					
+						<img src="images/blog/5speed.jpg" id="pic">
+					
+					</div>
+				
+				<div id="pic">
+					
+						<img src="images/blog/CPU.jpg" id="pic">
+					
+					</div>
+				
+				<p>
+				Wired performance is dramatic improvement over wireless transfers.
+				 On the 2008 MacBook 
+				Pro (the only one we have with an Ethernet port) wired performance is 
+				right around 100MBps (yes, megabytes) which is more than welcome for doing heavy file 
+				transfers. So the only bottleneck for the time being is the wireless 
+				router. Maybe by next holiday season I can invest in one of the next-gen 
+				AC routers, but for now the performance is great and I couldn't be happier
+				 with my $150 setup. 
+				
+				</p>
+				<div id="pic">
+					
+						<img src="images/blog/freenaswired.jpg" id="pic">
+					
+					</div>
+				
+				    <em>Posted by <strong>Scott</strong> Feb 24, 2015</em>
+			</div>
+			
+			<div id="footer">
+				<h3>Thanks for visiting!</h3>
+				<p>&copy 2015</p>
+			
+			</div>
+		
+		</div><!---end container------>
+	
+	</body>
+</html>
